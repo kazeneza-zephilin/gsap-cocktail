@@ -50,7 +50,6 @@ const Hero = () => {
                     scrub: true
                 }
             })
-            console.log(videoRef.current)
             videoRef.current.onloadedmetadata = () => {
                 tl.to(videoRef.current, {
                     currentTime: videoRef.current.duration
@@ -97,7 +96,6 @@ const Hero = () => {
                     muted
                     playsInline
                     preload="auto"
-                    autoPlay
                 />
             </div>
         </>
